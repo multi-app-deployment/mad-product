@@ -1,0 +1,63 @@
+product:
+  name: my-multi-app
+  description: Multi-application deployment product
+  version: 1.0.0
+
+owner:
+  name: thineshcv
+  email: thineshcv@emis.com
+  team: DevOps
+
+environments:
+  dev:
+    components:
+      mad-python-app:
+        repo: "git@github.com:multi-app-deployment/mad-python-api-1.git"
+        version: "develop"
+      mad-go-app:
+        repo: "git@github.com:multi-app-deployment/mad-go-api-1.git"
+        version: "develop"
+      mad-rust-app:
+        repo: "git@github.com:multi-app-deployment/mad-rust-api-1.git"
+        version: "develop"
+      mad-react-1-app:
+        repo: "git@github.com:multi-app-deployment/mad-react-cli-1.git"
+        version: "develop"
+      mad-react-2-app:
+        repo: "git@github.com:multi-app-deployment/mad-react-cli-2.git"
+        version: "develop"
+  staging:
+    components:
+      mad-python-app:
+        repo: "git@github.com:multi-app-deployment/mad-python-api-1.git"
+        version: "release-1.0"
+      mad-go-app:
+        repo: "git@github.com:multi-app-deployment/mad-go-api-1.git"
+        version: "release-1.0"
+      mad-rust-app:
+        repo: "git@github.com:multi-app-deployment/mad-rust-api-1.git"
+        version: "release-1.0"
+      mad-react-1-app:
+        repo: "git@github.com:multi-app-deployment/mad-react-cli-1.git"
+        version: "release-1.0"
+      mad-react-2-app:
+        repo: "git@github.com:multi-app-deployment/mad-react-cli-2.git"
+        version: "release-1.0"
+  prod:
+    components:
+      app1:
+        mad-python-app:
+        repo: "git@github.com:multi-app-deployment/mad-python-api-1.git"
+        version: "v1.0.0"
+      mad-go-app:
+        repo: "git@github.com:multi-app-deployment/mad-go-api-1.git"
+        version: "v1.0.0"
+      mad-rust-app:
+        repo: "git@github.com:multi-app-deployment/mad-rust-api-1.git"
+        version: "v1.0.0"
+      mad-react-1-app:
+        repo: "git@github.com:multi-app-deployment/mad-react-cli-1.git"
+        version: "v1.0.0"
+      mad-react-2-app:
+        repo: "git@github.com:multi-app-deployment/mad-react-cli-2.git"
+        version: "v1.0.0"
